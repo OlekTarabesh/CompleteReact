@@ -1,7 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CheckoutContainer = styled.div`
-  width: 55%;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -9,11 +8,21 @@ export const CheckoutContainer = styled.div`
   margin: 50px auto 0;
 `;
 
+export const CheckoutContent = styled.div`
+  width: 55%;
+  @media (max-width: 992px) {
+    width: 80%;
+  }
+  @media (max-width: 600px) {
+    width: 98%;
+  }
+`;
+
 export const CheckoutHeader = styled.div`
   width: 100%;
   padding: 10px 0;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   border-bottom: 1px solid darkgrey;
 `;
 
@@ -23,6 +32,22 @@ export const HeaderBlock = styled.div`
   &:last-child {
     width: 8%;
   }
+  @media (max-width: 768px) {
+    &:last-child {
+      width: 10%;
+    }
+  }
+  @media (max-width: 600px) {
+    &:last-child {
+      width: 10%;
+    }
+  }
+  @media (max-width: 356px) {
+    text-align: center;
+    &:first-child {
+      width: 18%;
+    }
+  }
 `;
 
 export const Total = styled.span`
@@ -30,35 +55,3 @@ export const Total = styled.span`
   margin-left: auto;
   font-size: 36px;
 `;
-
-// .checkout-container {
-//     width: 55%;
-//     min-height: 90vh;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     margin: 50px auto 0;
-  
-//     .checkout-header {
-//       width: 100%;
-//       padding: 10px 0;
-//       display: flex;
-//       justify-content: space-between;
-//       border-bottom: 1px solid darkgrey;
-  
-//       .header-block {
-//         text-transform: capitalize;
-//         width: 23%;
-  
-//         &:last-child {
-//           width: 8%;
-//         }
-//       }
-//     }
-  
-//     .total {
-//       margin-top: 30px;
-//       margin-left: auto;
-//       font-size: 36px;
-//     }
-//   }

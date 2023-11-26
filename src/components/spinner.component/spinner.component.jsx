@@ -1,9 +1,9 @@
 import { SpinnerOverlay, SpinnerContainer } from "./spinner.styles.jsx";
 
 const Spinner = () => (
-    <SpinnerOverlay>
-        <SpinnerContainer />
-    </SpinnerOverlay>
-)
+  <SpinnerOverlay>
+    <SpinnerContainer />
+  </SpinnerOverlay>
+);
 
-export default Spinner; 
+export default Spinner;
